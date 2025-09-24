@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adonai RH - Recrutamento, Estágios e Consultoria em RH</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta name="description" content="Conecte-se aos melhores talentos em Campinas e todo o Brasil. A Adonai RH oferece soluções completas em recrutamento, estágios e consultoria para impulsionar o crescimento da sua empresa.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <style>
+    .fade-in { opacity:0; transform: translateY(40px); transition: all 0.8s ease-out; }
+    .fade-in.visible { opacity:1; transform: translateY(0); }
+    .button-animate { transition: all 0.3s ease; }
+    .button-animate:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.3);}
+    
+    body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Estilo do menu mobile (para quando ele aparecer) */
+    #nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #0c4a6e;
+    padding: 1rem 0; /* Reduz o padding superior e inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+#nav-menu.active li {
+    margin: 0.5rem 0; /* Reduz a margem entre os itens */
+}
+
+#nav-menu.active a {
+    display: block;
+    padding: 0.25rem 1rem; /* Reduz o padding superior e inferior dos links */
+    font-size: 1rem; 
+}
+</style>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth dark:bg-gray-900 dark:text-gray-100">
+
+<header class="fixed w-full bg-blue-900 shadow z-50 dark:bg-gray-800">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <a href="#home">
+            <img src="logo.png" alt="Logo da Adonai RH" class="h-12">
+        </a>
+        
+        <div class="flex items-center space-x-4 flex-grow justify-end md:justify-center">
+    <button id="hamburger-menu" class="p-2 rounded-full text-white hover:bg-blue-800 transition-colors md:hidden">
+        <i class="fas fa-bars text-xl"></i>
+    </button>
+    
+    <button id="theme-toggle" class="p-2 rounded-full text-white hover:bg-blue-800 transition-colors">
+        <i class="fas fa-moon text-xl dark:hidden"></i>
+        <i class="fas fa-sun text-xl hidden dark:inline"></i>
+    </button>
+
+    <ul id="nav-menu" class="hidden md:flex space-x-6 ">
+        <li><a href="#home" class="text-white hover:text-blue-300 font-semibold">Início</a></li>
+        <li><a href="#sobre" class="text-white hover:text-blue-300 font-semibold">Sobre</a></li>
+        <li><a href="#servicos" class="text-white hover:text-blue-300 font-semibold">Serviços</a></li>
+        <li><a href="#beneficios-escolha" class="text-white hover:text-blue-300 font-semibold">Benefícios</a></li>
+        <li><a href="#depoimentos" class="text-white hover:text-blue-300 font-semibold">Depoimentos</a></li>
+        <li><a href="https://menvievagas.com.br/vagas/consultoriaadonairh/" class="text-white hover:text-blue-300 font-semibold" target="_blank" rel="noopener noreferrer">Vagas</a></li>
+        <li><a href="#contato" class="text-white hover:text-blue-300 font-semibold">Contato</a></li>
+        <li><a href="https://franquiaadonairh.com/" class="text-white hover:text-blue-300 font-semibold" target="_blank" rel="noopener noreferrer">Seja um Franqueado</a></li>
+        <li><a href="https://www.adonairh.com/newsitehome-2/area-franqueado-login/" class="text-white hover:text-blue-300 font-semibold" target="_blank" rel="noopener noreferrer">Área do Franqueado</a></li>
+    </ul>
+</div>
+    </nav>
+</header>
+<section id="home"
+    class="relative h-screen flex justify-center items-center text-center text-white bg-cover bg-center"
+    style="background-image: url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSz6Any5rLC5_LSYwyxSKPPsDEmi0ubjh2vq3r4HdXFIfg_53rgIyi-iFTq-7leuR09vnYtPFjNy-poieCSheI2hbYnIGY9vcwQgakfJ5XhA9-5Tfk');"
+    aria-label="Seção Inicial com Fundo Abstrato e Slogan da Adonai RH">
+    <div class="absolute inset-0 bg-blue-900 opacity-80 dark:bg-gray-950 dark:opacity-70"></div>
+    <div class="relative z-10 px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Adonai RH: Conectando Talentos, Impulsionando Empresas.</h1>
+        <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">
+            Sua parceira estratégica em Recrutamento, Estágios e Consultoria em RH.
+        </p>
+        <div class="space-x-4 flex flex-col sm:flex-row justify-center items-center">
+            <a href="#servicos" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 button-animate mb-4 sm:mb-0">
+                Nossos Serviços
+            </a>
+            <a href="https://menvievagas.com.br/vagas/consultoriaadonairh/" class="bg-white text-blue-900 px-8 py-4 rounded-full font-bold hover:bg-gray-200 button-animate" target="_blank" rel="noopener noreferrer">
+                Veja nossas Vagas
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="py-20 bg-blue-900 text-white text-center fade-in dark:bg-gray-950" aria-label="Seção Sobre a Adonai RH">
+    <h2 class="text-3xl font-bold mb-6">Sobre a Adonai RH</h2>
+    
+    <p class="max-w-3xl mx-auto mb-12 text-blue-100 dark:text-gray-300 px-4">Fundada em 2014, a Adonai RH se consolidou como referência em soluções de RH, oferecendo recrutamento, administração de estágios e desenvolvimento profissional para empresas de diversos portes.</p>
+
+    <div class="container mx-auto flex flex-wrap justify-center gap-8 px-4">
+        
+        <div class="bg-blue-700 p-8 rounded-xl shadow-lg w-80 text-left dark:bg-gray-800">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-compass text-3xl text-white mr-4" aria-hidden="true"></i>
+                <h3 class="text-2xl font-bold text-white">Missão</h3>
+            </div>
+            <p class="text-blue-100 dark:text-gray-300">Ser solução em encontrar, capacitar e gerenciar os melhores talentos para empresas de todo o país.</p>
+        </div>
+
+        <div class="bg-blue-700 p-8 rounded-xl shadow-lg w-80 text-left dark:bg-gray-800">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-route text-3xl text-white mr-4" aria-hidden="true"></i>
+                <h3 class="text-2xl font-bold text-white">Visão</h3>
+            </div>
+            <p class="text-blue-100 dark:text-gray-300">Expandir nossas atividades em todos os estados do Brasil através de afiliados e franqueados até 2025.</p>
+        </div>
+
+        <div class="bg-blue-700 p-8 rounded-xl shadow-lg w-80 text-left dark:bg-gray-800">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-book-open text-3xl text-white mr-4" aria-hidden="true"></i>
+                <h3 class="text-2xl font-bold text-white">Valores</h3>
+            </div>
+            <p class="text-blue-100 dark:text-gray-300">Nossas ações são pautadas pela HONRA e COERÊNCIA, busca incessante pela EFICIÊNCIA, sempre com FÉ que podemos e vamos alcançar nossos objetivos.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="servicos" class="py-20 bg-blue-50 text-center fade-in dark:bg-gray-800" aria-label="Seção Nossos Serviços">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Nossos Serviços</h2>
+    <div class="container mx-auto flex flex-wrap justify-center gap-8 px-4">
+        <div class="bg-white shadow-xl p-6 rounded-xl w-72 hover:shadow-2xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-user-tie text-blue-900 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-xl mb-2 dark:text-white">Recrutamento & Seleção</h3>
+            <p class="text-gray-600 dark:text-gray-300">Processos ágeis e assertivos para encontrar o candidato ideal, alinhado à cultura da sua empresa.</p>
+            <a href="https://menvievagas.com.br/vagas/consultoriaadonairh/" class="text-blue-700 hover:underline mt-4 block" target="_blank" rel="noopener noreferrer">Ver Vagas</a>
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-xl w-72 hover:shadow-2xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-graduation-cap text-blue-900 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-xl mb-2 dark:text-white">Administração de Estágios</h3>
+            <p class="text-gray-600 dark:text-gray-300">Conectamos estudantes talentosos a oportunidades de crescimento, com suporte completo e legal.</p>
+            <a href="https://menvievagas.com.br/vagas/consultoriaadonairh/" class="text-blue-700 hover:underline mt-4 block" target="_blank" rel="noopener noreferrer">Ver Vagas</a>
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-xl w-72 hover:shadow-2xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-chalkboard-user text-blue-900 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-xl mb-2 dark:text-white">Consultoria em RH</h3>
+            <p class="text-gray-600 dark:text-gray-300">Treinamentos, avaliações, planos de carreira e desenvolvimento de equipes de alta performance.</p>
+        </div>
+        <div class="bg-white shadow-xl p-6 rounded-xl w-72 hover:shadow-2xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-users text-blue-900 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-xl mb-2 dark:text-white">Outsourcing de RH</h3>
+            <p class="text-gray-600 dark:text-gray-300">Terceirização de funções de RH para que você possa focar no seu core business.</p>
+        </div>
+    </div>
+</section>
+
+<section id="clientes" class="py-20 bg-white text-center fade-in dark:bg-gray-900" aria-label="Seção Nossos Clientes">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Nossos Clientes</h2>
+    <div class="swiper mySwiperClientes container mx-auto px-4">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="starbucks.png" alt="Logo da Starbucks" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="subway.png" alt="Logo da Subway" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="reidomate.png" alt="Logo do Rei do Mate" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="royalcanin.png" alt="Logo da Royal Canin" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="kopenhagem.png" alt="Logo da Kopenhagen" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="farmais.png" alt="Logo da Farmais" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="worldtennis.png" alt="Logo da World Tennis" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-slide"><img src="casadopao.png" alt="Logo da Casa do Pão de Queijo" class="h-16 mx-auto opacity-70 hover:opacity-100 transition-opacity"></div>
+        </div>
+    </div>
+</section>
+
+<section id="premios" class="py-20 bg-blue-50 text-center fade-in dark:bg-gray-800" aria-label="Seção de Prêmios e Reconhecimentos">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Nosso trabalho é premiado desde 2015</h2>
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 px-4">
+        <img src="premio-2015.png" alt="Prêmio Liga 2015" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2016.png" alt="Prêmio Liga 2016" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2017.png" alt="Prêmio Liga 2017" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2018.png" alt="Prêmio Liga 2018" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2019.png" alt="Prêmio Liga 2019" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2020.png" alt="Prêmio Liga 2020" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2021.png" alt="Prêmio Liga 2021" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2022.png" alt="Prêmio Liga 2022" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2023.png" alt="Prêmio Liga 2023" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+        <img src="premio-2024.png" alt="Prêmio Liga 2024" class="h-16 md:h-20 hover:scale-105 transition-transform duration-300">
+    </div>
+</section>
+
+<section id="abf" class="py-20 bg-white text-center fade-in dark:bg-gray-900" aria-label="Seção de Associação com a ABF">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Somos associados da ABF</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+            <img src="abf.png" alt="Logo da Associação Brasileira de Franchising (ABF)" class="h-32">
+            
+            <div class="bg-blue-900 text-white p-8 rounded-2xl shadow-lg w-full md:w-1/2 text-left dark:bg-gray-800">
+                <h3 class="text-2xl font-bold mb-4">A força da ABF por trás da Adonai RH</h3>
+                <p class="text-blue-100 dark:text-gray-300 mb-4">
+                    Fundada em 1987, a Associação Brasileira de Franchising (ABF) é uma entidade sem fins lucrativos que representa oficialmente o sistema de franquias brasileiro.
+                </p>
+                <p class="text-blue-100 dark:text-gray-300">
+                    Seu propósito é fomentar o setor, nacional e internacionalmente, para que ele se mantenha próspero, sustentável, inovador, inclusivo e ético. Ser associado à ABF garante nosso compromisso com a excelência e as melhores práticas do franchising.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="beneficios-escolha" class="py-20 bg-blue-50 text-center fade-in dark:bg-gray-800" aria-label="Seção Por que escolher a Adonai RH">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Por que escolher a Adonai RH?</h2>
+    <div class="container mx-auto flex flex-wrap justify-center gap-8 px-4">
+        <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-64 hover:shadow-xl transition-all duration-300 dark:bg-gray-900">
+     <i class="fa-solid fa-handshake text-blue-700 text-4xl mb-4 dark:text-blue-400 hover:animate-pulse transition-all" aria-hidden="true"></i>
+      <h3 class="font-bold text-lg mb-2 dark:text-white">Conexão Humana e Assertiva</h3>
+      <p class="text-gray-600 dark:text-gray-300">Vamos além do currículo. Nosso foco é conectar o talento certo com a cultura da sua empresa, garantindo sucesso a longo prazo e a redução da rotatividade.</p>
+    </div>
+        <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-64 hover:shadow-xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-rocket text-blue-700 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-lg mb-2 dark:text-white">Crescimento Acelerado</h3>
+            <p class="text-gray-600 dark:text-gray-300">Com processos otimizados e suporte contínuo, ajudamos sua empresa a escalar e a se posicionar à frente no mercado, maximizando resultados com a equipe ideal.</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-64 hover:shadow-xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-shield-halved text-blue-700 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-lg mb-2 dark:text-white">Segurança e Conformidade</h3>
+            <p class="text-gray-600 dark:text-gray-300">Administramos o processo de estágio de ponta a ponta, garantindo que todas as exigências legais e burocráticas sejam cumpridas, para que você foque apenas no desenvolvimento dos estudantes.</p>
+        </div>
+        <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-64 hover:shadow-xl transition-all duration-300 dark:bg-gray-900">
+            <i class="fa-solid fa-sitemap text-blue-700 text-4xl mb-4 dark:text-blue-400" aria-hidden="true"></i>
+            <h3 class="font-bold text-lg mb-2 dark:text-white">Reconhecimento ABF</h3>
+            <p class="text-gray-600 dark:text-gray-300">Como associados da Associação Brasileira de Franchising, garantimos um padrão de qualidade elevado, ética e inovação contínua para sua tranquilidade e sucesso.</p>
+        </div>
+    </div>
+</section>
+<section id="beneficios-clube" class="py-20 bg-white text-center fade-in dark:bg-gray-900" aria-label="Seção Clube de Benefícios Adonai RH">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Clube de Benefícios Adonai RH</h2>
+    <p class="max-w-3xl mx-auto text-gray-600 mb-8 dark:text-gray-300 px-4">
+        Oferecemos um clube de benefícios exclusivo para seus colaboradores, com telemedicina, seguros, descontos em farmácias e muito mais.
+    </p>
+    <a href="https://adonairhbeneficios.srv.br/" target="_blank" rel="noopener noreferrer" class="bg-blue-700 text-white px-8 py-4 rounded-full font-bold button-animate">
+        Acesse o Clube de Benefícios
+    </a>
+</section>
+
+<section id="depoimentos" class="py-20 bg-blue-50 text-center fade-in dark:bg-gray-800" aria-label="Seção de Depoimentos de Franqueados">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 dark:text-gray-100">Veja os depoimentos de alguns de nossos franqueados</h2>
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        
+        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center dark:bg-gray-900">
+            <div class="w-full aspect-video mb-4">
+                <iframe 
+                    class="w-full h-full rounded-lg" 
+                    src="https://www.youtube.com/embed/0FwDKcDzZoo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="Depoimento Franqueado Marcio R. Souza de Sorocaba"
+                    aria-label="Vídeo de Depoimento do Franqueado Marcio R. Souza, de Sorocaba-SP"
+                ></iframe>
+            </div>
+            <p class="font-bold text-blue-900 dark:text-white">Marcio R. Souza</p>
+            <p class="text-gray-600 dark:text-gray-300">Sorocaba-SP</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center dark:bg-gray-900">
+            <div class="w-full aspect-video mb-4">
+                <iframe 
+                    class="w-full h-full rounded-lg" 
+                    src="https://www.youtube.com/embed/UnOFFfPImV4" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="Depoimento Franqueados Marcus Alvarenga e Rosana Cusma de São José dos Campos"
+                    aria-label="Vídeo de Depoimento dos Franqueados Marcus Alvarenga e Rosana Cusma, de São José dos Campos-SP"
+                ></iframe>
+            </div>
+            <p class="font-bold text-blue-900 dark:text-white">Marcus Alvarenga / Rosana Cusma</p>
+            <p class="text-gray-600 dark:text-gray-300">São José dos Campos-SP</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center dark:bg-gray-900">
+            <div class="w-full aspect-video mb-4">
+                <iframe 
+                    class="w-full h-full rounded-lg" 
+                    src="https://www.youtube.com/embed/KZxo1GkBnY0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="Depoimento Franqueada Regina Queiroz de Porangatu"
+                    aria-label="Vídeo de Depoimento da Franqueada Regina Queiroz, de Porangatu-GO"
+                ></iframe>
+            </div>
+            <p class="font-bold text-blue-900 dark:text-white">Regina Queiroz</p>
+            <p class="text-gray-600 dark:text-gray-300">Porangatu-GO</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center dark:bg-gray-900">
+            <div class="w-full aspect-video mb-4">
+                <iframe 
+                    class="w-full h-full rounded-lg" 
+                    src="https://www.youtube.com/embed/M3EBUUAPVy0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    title="Depoimento Franqueada Letícia V. Magalhães de São Paulo"
+                    aria-label="Vídeo de Depoimento da Franqueada Letícia V. Magalhães, de São Paulo-SP"
+                ></iframe>
+            </div>
+            <p class="font-bold text-blue-900 dark:text-white">Letícia V. Magalhães</p>
+            <p class="text-gray-600 dark:text-gray-300">São Paulo - SP</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="py-20 bg-blue-50 text-center fade-in dark:bg-gray-800" aria-label="Seção de Contato e Localização">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 dark:text-gray-100">Entre em Contato</h2>
+    <p class="max-w-2xl mx-auto mb-8 text-gray-600 dark:text-gray-300 px-4">Pronto para encontrar o talento ideal para sua empresa? Preencha o formulário e nossa equipe entrará em contato.</p>
+    
+    <div class="flex flex-col md:flex-row justify-around gap-8 mb-12 w-full md:w-3/4 lg:w-2/3 mx-auto px-4">
+    <a href="tel:+551940421190" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 w-full md:w-auto dark:bg-gray-900">
+        <i class="fa-solid fa-phone text-3xl text-blue-700 dark:text-blue-400 mb-2" aria-hidden="true"></i>
+        <p class="font-bold text-gray-800 dark:text-gray-200">Ligue para nós</p>
+        <p class="text-gray-600 dark:text-gray-400">(19) 4042-1190</p>
+    </a>
+    <a href="https://maps.app.goo.gl/fSbVhodkCfo6tsYq8" target="_blank" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 w-full md:w-auto dark:bg-gray-900">
+        <i class="fa-solid fa-map-marker-alt text-3xl text-blue-700 dark:text-blue-400 mb-2" aria-hidden="true"></i>
+        <p class="font-bold text-gray-800 dark:text-gray-200">Visite-nos</p>
+        <p class="text-gray-600 dark:text-gray-400">Rua Donato Radomille, 32 - Campinas/SP</p>
+    </a>
+    <a href="mailto:contato@adonairh.com" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 w-full md:w-auto dark:bg-gray-900">
+        <i class="fa-solid fa-envelope text-3xl text-blue-700 dark:text-blue-400 mb-2" aria-hidden="true"></i>                           
+        <p class="font-bold text-gray-800 dark:text-gray-200">Envie um e-mail</p>
+        <p class="text-gray-600 dark:text-gray-400">contato@adonairh.com</p>
+    </a>
+</div>
+
+    <form action="https://formspree.io/f/mblzjdvn" method="POST" class="max-w-xl mx-auto space-y-4 px-4 mb-12">
+        <div class="flex flex-col md:flex-row gap-4">
+            <input type="text" name="nome" placeholder="Seu nome" required
+                class="w-full md:w-1/2 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200">
+            <input type="email" name="email" placeholder="Seu e-mail" required
+                class="w-full md:w-1/2 border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200">
+        </div>
+        <textarea name="mensagem" rows="4" placeholder="Mensagem" required
+            class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200"></textarea>
+        <button type="submit"
+            class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold button-animate">
+            Enviar
+        </button>
+    </form>
+    
+    <div class="map-section">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 dark:text-gray-100">Onde estamos</h2>
+        <div class="map-container mx-auto max-w-lg rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1etTV8H8RbOMmGvS83yiHm81dorbQahI&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-blue-900 text-white text-center py-8 dark:bg-gray-950">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-center items-center md:justify-between mb-4">
+            <div class="mb-4 md:mb-0">
+                <img src="logo.png" alt="Logo Adonai RH" class="h-10 mx-auto md:mx-0">
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/company/adonairhoficial" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors" aria-label="LinkedIn da Adonai RH">
+                    <i class="fab fa-linkedin-in text-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/adonairh" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors" aria-label="Instagram da Adonai RH">
+                    <i class="fab fa-instagram text-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/adonairhoficial" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors" aria-label="Facebook da Adonai RH">
+                    <i class="fab fa-facebook-f text-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/@adonairh" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-300 transition-colors" aria-label="YouTube da Adonai RH">
+                    <i class="fab fa-youtube text-2xl" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-blue-800 pt-4 mt-4 text-sm dark:border-gray-700">
+            <p>Rua Donato Radomille, 32 - Jardim Chapadão, Campinas-SP</p>
+            <p>Telefone: (19) 4042-1190 | E-mail: contato@adonairh.com</p>
+            <p class="mt-2">CNPJ: 41.299.154/0001-03</p>
+            <p>Adonai RH Consultoria e Administração LTDA</p>
+            <p>© <span id="current-year"></span> Adonai RH - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/551940421190" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-4 shadow-xl hover:bg-green-600 transition-transform transform hover:scale-110" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i>
+</a>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const observer = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    },{threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(e=>observer.observe(e));
+    
+    const swiperClientes = new Swiper(".mySwiperClientes", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.querySelector('html');
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+            localStorage.theme = 'dark';
+        } else {
+            localStorage.theme = 'light';
+        }
+    });
+
+    // Código do menu mobile
+    const hamburgerBtn = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Fecha o menu ao clicar em um link
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script></body>
+</html>
