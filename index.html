@@ -455,7 +455,6 @@
         }
     });
 
-    // Código do menu mobile
     const hamburgerBtn = document.getElementById('hamburger-menu');
     const navMenu = document.getElementById('nav-menu');
 
@@ -463,7 +462,6 @@
         navMenu.classList.toggle('active');
     });
 
-    // Fecha o menu ao clicar em um link
     navMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
